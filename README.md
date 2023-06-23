@@ -1,4 +1,4 @@
-Mise en place sécurité :
+Mise en place sécurité [https://symfony.com/doc/current/security.html](https://symfony.com/doc/current/security.html) :
 
 ```
 composer require symfony/security-bundle
