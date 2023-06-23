@@ -22,3 +22,7 @@ composer require orm
 ### Registration
 
 `symfony console make:auth`
+
+### Routes
+
+`symfony console debug:router`
