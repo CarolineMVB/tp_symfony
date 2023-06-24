@@ -1,6 +1,24 @@
 TP_SYMFONY
 ===
 
+## Utilisation :
+
+1. Installation
+```
+composer install
+php bin/console doctrine:database:create
+php bin/console doctrine:migrations:migrate
+```
+
+2. Utilisation
+
+- Afficher les routes : `symfony console debug:router`
+- Créer un utilisateur : visiter `/register`
+- Connexion : visiter `/login`
+- Admin dashboard : visiter `/admin`
+
+## Doc :
+
 ### Mise en place sécurité [https://symfony.com/doc/current/security.html](https://symfony.com/doc/current/security.html) :
 
 ```
