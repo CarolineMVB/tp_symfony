@@ -59,12 +59,12 @@ class Post
         return $this;
     }
 
-    public function getIdUser(): ?user
+    public function getUser(): ?user
     {
         return $this->user;
     }
 
-    public function setIdUser(?user $user): static
+    public function setUser(?user $user): static
     {
         $this->user = $user;
 
