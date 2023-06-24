@@ -30,6 +30,12 @@ class Post
     #[ORM\Column(type: Types::DATETIME_MUTABLE, nullable: true)]
     private ?\DateTimeInterface $updated_at = null;
 
+    public function __construct()
+    {
+        $this->created_at = new \DateTime();
+        $this->updated_at = new \DateTime();
+    }
+
     public function __toString(): string
     {
         return $this->title;
