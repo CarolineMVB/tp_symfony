@@ -22,11 +22,11 @@ class Comment
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
-    private ?User $id_user = null;
+    private ?User $user = null;
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
-    private ?Post $id_post = null;
+    private ?Post $post = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $created_at = null;
@@ -65,24 +65,24 @@ class Comment
 
     public function getIdUser(): ?User
     {
-        return $this->id_user;
+        return $this->user;
     }
 
-    public function setIdUser(?User $id_user): static
+    public function setIdUser(?User $user): static
     {
-        $this->id_user = $id_user;
+        $this->user = $user;
 
         return $this;
     }
 
     public function getIdPost(): ?Post
     {
-        return $this->id_post;
+        return $this->post;
     }
 
-    public function setIdPost(?Post $id_post): static
+    public function setIdPost(?Post $post): static
     {
-        $this->id_post = $id_post;
+        $this->post = $post;
 
         return $this;
     }

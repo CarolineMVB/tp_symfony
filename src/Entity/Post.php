@@ -22,7 +22,7 @@ class Post
 
     #[ORM\ManyToOne]
     #[ORM\JoinColumn(nullable: false)]
-    private ?user $id_user = null;
+    private ?user $user = null;
 
     #[ORM\Column(type: Types::DATETIME_MUTABLE)]
     private ?\DateTimeInterface $created_at = null;
@@ -61,12 +61,12 @@ class Post
 
     public function getIdUser(): ?user
     {
-        return $this->id_user;
+        return $this->user;
     }
 
-    public function setIdUser(?user $id_user): static
+    public function setIdUser(?user $user): static
     {
-        $this->id_user = $id_user;
+        $this->user = $user;
 
         return $this;
     }
