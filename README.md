@@ -7,6 +7,7 @@ TP_SYMFONY
 composer require symfony/security-bundle
 composer require symfony/maker-bundle
 composer require orm
+composer require friendsofsymfony/user-bundle "^3.0"
 ```
 
 ### Setup
@@ -26,3 +27,9 @@ composer require orm
 ### Routes
 
 `symfony console debug:router`
+
+### Admin
+
+```
+symfony console make:admin:dashboard
+```
