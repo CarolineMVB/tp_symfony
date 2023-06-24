@@ -16,6 +16,7 @@ php bin/console doctrine:migrations:migrate
 - Créer un utilisateur : visiter `/register`
 - Connexion : visiter `/login`
 - Admin dashboard : visiter `/admin`
+- Se définir admin : dans la BDD, modifier la valeur de la colonne `roles` pour `["ROLE_ADMIN"]`
 
 ## Doc :
 
